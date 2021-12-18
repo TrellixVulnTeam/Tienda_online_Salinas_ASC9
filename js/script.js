@@ -6,6 +6,12 @@ window.sr = ScrollReveal();
         distance: '150px'
     })
 
+    sr.reveal('.contenedorCarousel', {
+        duration: 3000,
+        origin: 'bottom',
+        distance: '150px'
+    })
+
     sr.reveal ('.contenedorTarjetasCombos4', {
         duration: 3000,
         origin: 'bottom',

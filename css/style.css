@@ -94,6 +94,19 @@ header {
     transition: 500ms;
 }
 
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    grid-area: btn;
+}
+
+.color {
+    color: #eee;
+}
+
 .superior .barraDeNavegacion ul {
     list-style: none;
     display: flex;
@@ -700,7 +713,12 @@ legend {
             grid-template-areas:
             "logo logo" 
             "busqueda busqueda"
-            "barraDeNavegacion carrito";
+            "btn carrito";
+    }
+
+    header label {
+        display: flex;
+            justify-content: center;
     }
 
     .superior .carrito img {
@@ -712,9 +730,26 @@ legend {
         margin: auto 0;
     }
 
-    .superior .barraDeNavegacion ul li a {
-        font-size: medium;
-        margin: auto 6px;
+    .superior .barraDeNavegacion {
+        position: absolute;
+        background-color: #031638;
+        width: 100%;
+        margin-top: 305px;
+        margin-left: -120%;
+        z-index: 2;
+    }
+
+    .superior .barraDeNavegacion ul li {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .superior .barraDeNavegacion ul {
+        flex-direction: column;
+    }
+
+    #btn-menu:checked ~ .barraDeNavegacion {
+        margin-left: -2%;
     }
 
 }
@@ -778,7 +813,7 @@ legend {
             grid-template-areas:
             "logo logo" 
             "busqueda busqueda"
-            "barraDeNavegacion carrito";
+            "btn carrito";
     }
 
     .superior .carrito img {
@@ -791,10 +826,10 @@ legend {
         margin: auto 0;
     }
 
-    .superior .barraDeNavegacion ul li a {
-        font-size: medium;
-        margin: auto 6px;
+    #btn-menu:checked ~ .barraDeNavegacion {
+        margin-left: -3%;
     }
+
 
     /* formulario de contacto */
 
