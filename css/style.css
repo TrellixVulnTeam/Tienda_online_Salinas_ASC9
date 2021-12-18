@@ -595,12 +595,13 @@ legend {
     margin: 2px auto;
 }
 
-.redes a img {
-    width: 100px;
+.redes a svg {
+    width: 75px;
+    color: #000;
     transition: 500ms;
 }
 
-.redes a img:hover {
+.redes a svg:hover {
     transform: scale(1.3);
 }
 
