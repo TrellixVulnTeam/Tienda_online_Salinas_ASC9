@@ -735,7 +735,7 @@ legend {
         position: absolute;
         background-color: #031638;
         width: 100%;
-        margin-top: 305px;
+        margin-top: 20em;
         margin-left: -120%;
         z-index: 2;
     }
@@ -750,7 +750,8 @@ legend {
     }
 
     #btn-menu:checked ~ .barraDeNavegacion {
-        margin-left: -2%;
+        margin-left: -11px;
+        text-align: center;
     }
 
 }
