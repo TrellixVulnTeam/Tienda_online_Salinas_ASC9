@@ -483,15 +483,14 @@ body::-webkit-scrollbar-thumb {
       position: absolute;
       background-color: #031638;
       width: 100%;
-      height: 250px;
-      margin-top: 132%;
+      margin-top: 325px;
       margin-left: -120%;
+      padding: 15px;
       z-index: 2; }
       .navbar .superior .barraDeNavegacion ul {
-        flex-direction: column;
-        justify-content: space-evenly; }
-        .navbar .superior .barraDeNavegacion ul li {
-          margin: 10px auto 0 auto; }
+        flex-direction: row;
+        justify-content: space-around;
+        box-sizing: border-box; }
     .navbar .superior label {
       display: flex;
       justify-content: center; }
