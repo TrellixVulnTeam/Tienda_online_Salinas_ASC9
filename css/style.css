@@ -86,7 +86,7 @@ body::-webkit-scrollbar-thumb {
     .navbar .superior label {
       display: none;
       grid-area: btn; }
-      .navbar .superior label .bg {
+      .navbar .superior label svg {
         color: #eee; }
     .navbar .superior #btn-menu {
       display: none; }
@@ -466,7 +466,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 750px) {
   .navbar .superior {
-    height: 210px;
+    height: 240px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -483,17 +483,20 @@ body::-webkit-scrollbar-thumb {
       position: absolute;
       background-color: #031638;
       width: 100%;
-      margin-top: 20em;
+      margin-top: 23em;
       margin-left: -120%;
       z-index: 2; }
       .navbar .superior .barraDeNavegacion ul {
-        flex-direction: column; }
+        flex-direction: column;
+        justify-content: center; }
         .navbar .superior .barraDeNavegacion ul li {
-          margin-top: 10px;
-          text-align: center; }
+          margin: 10px auto 0 auto; }
     .navbar .superior label {
       display: flex;
       justify-content: center; }
+      .navbar .superior label svg {
+        width: 50px;
+        height: 50px; }
     .navbar .superior #btn-menu:checked ~ .barraDeNavegacion {
       margin-left: -11px;
       text-align: center; } }
