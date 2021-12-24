@@ -258,7 +258,7 @@ header label {
 }
 
 .tarjeta button:hover {
-    background-color: rgb(1, 19, 53); 
+    background-color: #011335; 
     color: #eee;
     text-align: center;
     cursor: pointer;
@@ -305,7 +305,6 @@ header label {
 }
 
 .tarjetaDe4 form .titulos {
-    margin-left: 78px;
     margin: 5px 0 3px 67px;
 }
 
