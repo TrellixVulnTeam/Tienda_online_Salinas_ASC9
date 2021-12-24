@@ -483,7 +483,7 @@ body::-webkit-scrollbar-thumb {
       position: absolute;
       background-color: #031638;
       width: 100%;
-      margin-top: 325px;
+      margin-top: 38ch;
       margin-left: -120%;
       padding: 15px;
       z-index: 2; }
