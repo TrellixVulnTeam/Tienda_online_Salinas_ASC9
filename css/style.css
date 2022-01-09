@@ -22,17 +22,17 @@ body::-webkit-scrollbar-thumb {
   .navbar .superior {
     width: 100%;
     height: 110px;
-    padding: 10px;
     margin: auto;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 3px;
     grid-template-areas: "logo busqueda carrito" "logo barraDeNavegacion carrito"; }
-    .navbar .superior .logo {
+    .navbar .superior .logo, .navbar .superior .carrito {
       grid-area: logo;
       margin: auto; }
-      .navbar .superior .logo img {
+      .navbar .superior .logo img, .navbar .superior .carrito img {
         width: 75px;
         height: 75px; }
     .navbar .superior .busqueda {
@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
       .navbar .superior .busqueda input {
         width: 90%;
         height: 30px;
-        margin-right: 3px;
+        margin: 0 3px 0 0;
         padding: 0 20px 3px 20px;
         border: 1px solid #042357;
         border-radius: 30px;
@@ -53,7 +53,7 @@ body::-webkit-scrollbar-thumb {
       .navbar .superior .busqueda button {
         width: 40px;
         height: 30px;
-        margin-left: 3px;
+        margin: 0 3px 0 0;
         background-color: transparent;
         color: #eee;
         border: 0;
@@ -78,11 +78,7 @@ body::-webkit-scrollbar-thumb {
             cursor: pointer;
             font-size: x-large; }
     .navbar .superior .carrito {
-      grid-area: carrito;
-      margin: auto; }
-      .navbar .superior .carrito img {
-        width: 75px;
-        height: 75px; }
+      grid-area: carrito; }
     .navbar .superior label {
       display: none;
       grid-area: btn; }
@@ -90,6 +86,29 @@ body::-webkit-scrollbar-thumb {
         color: #eee; }
     .navbar .superior #btn-menu {
       display: none; }
+
+.tarjetasGrandesPresentacion {
+  width: 95%;
+  margin: 60px auto; }
+  .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen {
+    width: 90%;
+    margin: auto;
+    background-color: #042357;
+    display: flex; }
+    .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen img {
+      width: 800px;
+      height: 400px; }
+    .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side {
+      width: 30%;
+      margin: 10px auto;
+      padding: 10px; }
+      .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side h3 {
+        font-size: x-large;
+        text-align: center;
+        color: #eee; }
+      .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side p {
+        font-size: large;
+        color: #eee; }
 
 .distribucionTarjetas {
   width: 95%;
@@ -142,7 +161,7 @@ body::-webkit-scrollbar-thumb {
     .contenedorTarjetasDe4 .tarjetaDe4 form input {
       width: 65px;
       height: 22px;
-      margin: 1px 0 5px 9px;
+      margin: 0 0 0 9px;
       text-align: center;
       border: 0;
       font-size: small; }
@@ -235,10 +254,10 @@ body::-webkit-scrollbar-thumb {
 .tarjeta {
   width: 275px;
   height: 370px;
+  margin: 20px auto;
   background-color: #042357;
   border: 1px solid #042357;
-  padding: 10px;
-  margin: 20px auto; }
+  padding: 10px; }
   .tarjeta h5 {
     font-size: large;
     text-align: center;
@@ -259,8 +278,8 @@ body::-webkit-scrollbar-thumb {
   .tarjeta form input {
     width: 65px;
     height: 23px;
+    margin: 0 0 10px 8px;
     text-align: center;
-    margin-left: 8px;
     border: none;
     font-size: small !important; }
   .tarjeta form .talle {
@@ -274,8 +293,7 @@ body::-webkit-scrollbar-thumb {
   .tarjeta button {
     width: 240px;
     height: 25px;
-    margin-top: 8px;
-    margin-left: 3px;
+    margin: 8px 0 0 3px;
     background-color: #ccc;
     border: none;
     font-size: medium;
@@ -298,9 +316,9 @@ body::-webkit-scrollbar-thumb {
 
 .botonPreguntas {
   background-color: #ccc;
-  margin: 30px auto;
   width: 80%;
   height: 50px;
+  margin: 30px auto;
   text-align: center;
   padding-top: 10px;
   font-size: 20px;
@@ -328,9 +346,9 @@ body::-webkit-scrollbar-thumb {
     text-align: center; }
 
 .contenedor {
-  margin: 30px auto 60px auto;
   width: 95%;
-  height: 350px; }
+  height: 350px;
+  margin: 30px auto 60px auto; }
   .contenedor .margenes {
     padding: 15px 15px 30px 15px;
     background-color: #031638;
@@ -371,7 +389,7 @@ body::-webkit-scrollbar-thumb {
         .contenedor .margenes form .formulario .enviar {
           width: 100%;
           height: 100px;
-          margin-top: 50px;
+          margin: 50px 0 0 0;
           display: flex;
           flex-direction: row;
           align-items: center; }
@@ -387,8 +405,8 @@ body::-webkit-scrollbar-thumb {
           .contenedor .margenes form .formulario .enviar .botonEnviar {
             width: 20%;
             height: 30px;
-            display: inline;
             margin: auto;
+            display: inline;
             border: 0;
             background-color: #031638;
             color: #eee;
@@ -484,8 +502,7 @@ body::-webkit-scrollbar-thumb {
       background-color: #031638;
       width: 100%;
       height: 80px;
-      margin-top: 300px;
-      margin-left: -120%;
+      margin: 300px 0 0 -1200px;
       padding: 15px;
       z-index: 2; }
       .navbar .superior .barraDeNavegacion ul {
