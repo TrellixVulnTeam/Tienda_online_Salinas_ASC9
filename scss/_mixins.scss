@@ -1,0 +1,10 @@
+@mixin width-heigth-margin ($width, $heigth, $margin) {
+    width: $width;
+    height: $heigth;
+    margin: $margin;
+}
+
+@mixin width-heigth ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}

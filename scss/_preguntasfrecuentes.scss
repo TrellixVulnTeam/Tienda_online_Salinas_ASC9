@@ -1,0 +1,30 @@
+.botonPreguntas {
+    background-color: $gris_medio;
+    @include width-heigth-margin (80%, 50px, 30px auto);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    transition: 500ms;
+    a {
+        text-decoration: none;
+        color: $negro;
+        &:hover {
+            text-decoration: none;
+            color: $negro;
+        }
+    }
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.contenedorPreguntas {
+    @include width-heigth-margin (95%, 20%, 15px auto 0 auto);
+    padding-top: 15px;
+    .modifyButton {
+        @include width-heigth-margin (95%, 90%, 5px auto 5px 3%);
+        letter-spacing: 1px;
+        font-size: large;
+        text-align: center;
+    }
+}

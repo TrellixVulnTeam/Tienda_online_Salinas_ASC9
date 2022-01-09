@@ -1,0 +1,86 @@
+.navbar {
+    background-color: $azul_oscuro;
+    .superior {
+        @include width-heigth-margin (100%, 110px, auto);
+        padding: 10px;
+        display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 3px;
+            grid-template-areas: 
+                "logo busqueda carrito"
+                "logo barraDeNavegacion carrito";
+        .logo {
+            grid-area: logo;
+            margin: auto;
+            img {
+                width: 75px;
+                height: 75px;
+            }
+        }
+        .busqueda {
+            grid-area: busqueda;
+            display: flex;
+                justify-content: center;
+            input {
+                @include width-heigth-margin (90%, 30px, 0 3px 0 0);
+                padding: 0 20px 3px 20px;
+                border: 1px solid $azul_medio;
+                border-radius: 30px;
+                background-color: $gris_claro;
+                transition: .5s;
+                &:focus {
+                    color: $negro;
+                }
+            }
+            button {
+                @include width-heigth-margin (40px, 30px, 0 3px 0 0);
+                background-color: transparent;
+                color: $gris_claro;
+                border: 0;
+                transition: 500ms;
+                &:hover {
+                    background-color: $gris_claro;
+                    cursor: pointer;
+                    color: $negro;
+                }
+            }
+        }
+        .barraDeNavegacion {
+            grid-area: barraDeNavegacion;
+            ul {
+                list-style: none;
+                display: flex;
+                    justify-content: space-around;
+                li {
+                    a{
+                        text-decoration: none;
+                        color: $gris_claro;
+                        font-size: large;
+                        transition: 500ms;
+                        &:hover {
+                            text-decoration: 2px underline;
+                            cursor: pointer;
+                            font-size: x-large;
+                        }
+                    }
+                }
+            }
+        }
+        .carrito {
+            grid-area: carrito;
+            @extend .logo;
+        }
+        label {
+            display: none;
+            grid-area: btn;
+            svg {
+                color: $gris_claro;
+            }
+        }
+        #btn-menu {
+            display: none;
+        }
+    }
+    
+}

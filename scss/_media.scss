@@ -1,0 +1,199 @@
+@media only screen and (max-width: 1100px) {
+    .contenedorTarjetasDe4 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1.5fr;
+        grid-template-areas: 
+            "producto1 producto2"
+            "producto3 producto4";
+    }
+    .contenedorTarjetasCombos4 {
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contenedor {
+        height: 650px;
+        margin: 30px auto 80px auto;
+        .margenes {
+            form {
+                display: grid;
+                    grid-template-columns: 2fr;
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-areas: 
+                        "mensaje"
+                        "formulario";
+                    justify-items: center;
+                margin-bottom: 40px;
+                .formulario {
+                    height: 150px;
+                    margin-top: 10px;
+                    .formularioLlenar {
+                        .input {
+                            height: 40px;
+                            margin: 8px auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .distribucionTarjetas {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1.5fr);
+        grid-template-areas: 
+            "zapatillas buzos"
+            "remeras pantalones"
+            "combosArmados combos";
+    }
+    .contenedorTarjetasCombos4 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1.5fr;
+        gap: 25px;
+        grid-template-areas: 
+            "zapatillas remeras"
+            "pantalones buzos";
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .navbar {
+        .superior {
+            height: 240px;
+            margin: auto;
+            display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 2fr 1fr 1fr;
+                gap: 3px;
+                align-items: center;
+                grid-template-areas:
+                "logo logo" 
+                "busqueda busqueda"
+                "btn carrito";
+            .carrito {
+                img {
+                    @include width-heigth (50px, 50px);
+                }
+            }
+            .busqueda {
+                input {
+                    margin: auto 0;
+                }
+            }
+            .barraDeNavegacion {
+                position: absolute;
+                background-color: $azul_oscuro;
+                @include width-heigth-margin (100%, 80px, 300px 0 0 -1200px);
+                padding: 15px;
+                z-index: 2;
+                ul {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    box-sizing: border-box;
+                }
+            }
+            label {
+                display: flex;
+                    justify-content: center;
+                svg {
+                    @include width-heigth (50px, 50px);
+                }
+            }
+            #btn-menu:checked ~ .barraDeNavegacion {
+                margin-left: -11px;
+                text-align: center;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .distribucionTarjetas {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1.5fr);
+        grid-template-areas: 
+            "zapatillas"
+            "buzos"
+            "remeras"
+            "pantalones"
+            "combosArmados"
+            "combos";
+    }
+    .contenedorTarjetasDe4 {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1.5fr);
+        grid-template-areas: 
+            "producto1"
+            "producto2"
+            "producto3"
+            "producto4";
+    }
+    .contenedorTarjetasCombos4 {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1.5fr);
+        grid-template-areas: 
+            "zapatillas"
+            "remeras"
+            "pantalones"
+            "buzos";
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .superior {
+        height: 210px;
+        margin: auto;
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 2fr 1fr 1fr;
+            gap: 3px;
+            align-items: center;
+            grid-template-areas:
+            "logo logo" 
+            "busqueda busqueda"
+            "btn carrito";
+        .carrito {
+            img {
+                @include width-heigth (50px, 50px);
+            }
+        }
+        .busqueda {
+            .input {
+                height: 20px;
+                margin: auto 0;
+            }
+        }
+    }
+
+    #btn-menu:checked ~ .barraDeNavegacion {
+        margin-left: -3%;
+    }
+
+    .contenedor {
+        .margenes {
+            form {
+                .formulario {
+                    .enviar {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 20px auto 10px auto;
+                        .captcha {
+                            margin: 5px auto;
+                        }
+                        .botonEnviar {
+                            @include width-heigth (100%, 60px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    legend {
+        font-size: large;
+    }
+}

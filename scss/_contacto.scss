@@ -1,0 +1,127 @@
+.contenedor {
+    @include width-heigth-margin (95%, 350px, 30px auto 60px auto);
+    .margenes {
+        padding: 15px 15px 30px 15px;
+        background-color: $azul_oscuro;
+        border: 3px solid $azul_oscuro;
+        color: $gris_medio;
+        legend {
+            font-size: x-large;
+        }
+        form {
+            display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 1fr;
+                grid-template-areas: 
+                "mensaje formulario";
+                justify-items: center;
+            .mensaje {
+                @include width-heigth-margin (95%, 300px, 0 auto);
+                padding: 5px 10px;
+                grid-area: mensaje;
+                resize: none;
+                font-size: large;
+            }
+            .formulario {
+                @include width-heigth (95%, 300px);
+                grid-area: formulario;
+                display: flex;
+                flex-direction: column;
+                .formularioLlenar {
+                    .input {
+                        width: 100%;
+                        height: 30px;
+                        margin-bottom: 20px;
+                        padding: 0 20px;
+                        border: 1px solid #042357;
+                        border-radius: 30px;
+                        transition: 500ms;
+                        &:focus {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .enviar {
+                    @include width-heigth-margin (100%, 100px, 50px 0 0 0);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .captcha {
+                        display: inline;
+                        margin: auto;
+                        img {
+                            width: 95%;
+                            height: 100px;
+                            margin: auto;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .botonEnviar {
+                        @include width-heigth-margin (20%, 30px, auto);
+                        display: inline;
+                        border: 0;
+                        background-color: $azul_oscuro;
+                        color: $gris_claro;
+                        transition: 500ms;
+                        &:hover {
+                            background-color: $gris_claro;
+                            cursor: pointer;
+                            color: $negro;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.redes {
+    width: 90%;
+    height: 35%;
+    margin: 0 auto;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    a {
+        margin: 10px auto;
+        padding: 35px;
+        border-radius: 70px;
+        background-color: $gris_claro;
+        transition: 500ms;
+        &:hover {
+            background-color: $azul_marino
+        }
+    }
+    .ig {
+        svg {
+            width: 75px;
+            color: #C13584;
+        }
+    }
+    .tw {
+        svg {
+            width: 75px;
+            color: #1DA1F2;
+        }
+    }
+    .fc {
+        svg {
+            width: 75px;
+            color: #4267B2;
+        }
+    }
+    .lk {
+        svg {
+            width: 75px;
+            color: #0e76a8;
+        }
+    }
+    .gg {
+        svg {
+            width: 75px;
+            color: #DB4437;
+        }
+    }
+}
