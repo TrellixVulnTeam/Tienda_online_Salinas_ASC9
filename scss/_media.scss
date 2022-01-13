@@ -1,3 +1,25 @@
+@media only screen and (max-width: 1250px) {
+    .tarjetasGrandesPresentacion {
+        .carouselExterno {
+            .carouselInterno {
+                .conteinerImgDescrip {
+                    .imagen {
+                        img {
+                            @include width-heigth (55%, 320px)
+                        }
+                        .side {
+                            width: 40%;
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     .contenedorTarjetasDe4 {
         grid-template-columns: 1fr 1fr;
@@ -54,6 +76,22 @@
             "zapatillas remeras"
             "pantalones buzos";
     }
+    .tarjetasGrandesPresentacion {
+        .carouselExterno {
+            .carouselInterno {
+                .conteinerImgDescrip {
+                    .imagen {
+                        img {
+                            @include width-heigth (45%, 280px)
+                        }
+                        .side {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -105,6 +143,24 @@
             }
         }
         
+    }
+    .tarjetasGrandesPresentacion {
+        .carouselExterno {
+            .carouselInterno {
+                .conteinerImgDescrip {
+                    .imagen {
+                        flex-direction: column;
+                        margin: auto;
+                        img {
+                            @include width-heigth (80%, 320px);
+                        }
+                        .side {
+                            width: 95%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -196,4 +252,22 @@
     legend {
         font-size: large;
     }
-}
+    .tarjetasGrandesPresentacion {
+        .carouselExterno {
+            .carouselInterno {
+                .conteinerImgDescrip {
+                    .imagen {
+                        flex-direction: column;
+                        margin: auto;
+                        img {
+                            @include width-heigth (80%, 280px);
+                        }
+                        .side {
+                            width: 95%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

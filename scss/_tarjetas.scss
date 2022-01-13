@@ -9,20 +9,25 @@
                     margin: auto;
                     background-color: $azul_medio;
                     display: flex;
+                    flex-direction: row;
                     img {
-                        @include width-heigth (800px, 400px);
+                        @include width-heigth (70%, 400px);
+                        margin: auto;
                     }
                     .side {
+                        display: flex;
+                        flex-direction: column;
                         width: 30%;
                         margin: 10px auto;
                         padding: 10px;
                         h3 {
-                            font-size: x-large;
+                            font-size: 1.5rem;
                             text-align: center;
                             color: $gris_claro;
                         }
                         p {
-                            font-size: large;
+                            font-size: 1.2rem;
+                            letter-spacing: 2px;
                             color: $gris_claro;
                         }
                     }

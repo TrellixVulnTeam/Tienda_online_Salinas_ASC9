@@ -94,20 +94,25 @@ body::-webkit-scrollbar-thumb {
     width: 90%;
     margin: auto;
     background-color: #042357;
-    display: flex; }
+    display: flex;
+    flex-direction: row; }
     .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen img {
-      width: 800px;
-      height: 400px; }
+      width: 70%;
+      height: 400px;
+      margin: auto; }
     .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side {
+      display: flex;
+      flex-direction: column;
       width: 30%;
       margin: 10px auto;
       padding: 10px; }
       .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side h3 {
-        font-size: x-large;
+        font-size: 1.5rem;
         text-align: center;
         color: #eee; }
       .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side p {
-        font-size: large;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
         color: #eee; }
 
 .distribucionTarjetas {
@@ -447,6 +452,15 @@ body::-webkit-scrollbar-thumb {
     width: 75px;
     color: #DB4437; }
 
+@media only screen and (max-width: 1250px) {
+  .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen img {
+    width: 55%;
+    height: 320px; }
+  .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side {
+    width: 40%; }
+    .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side p {
+      font-size: 1rem; } }
+
 @media only screen and (max-width: 1100px) {
   .contenedorTarjetasDe4 {
     grid-template-columns: 1fr 1fr;
@@ -480,7 +494,12 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.5fr 1.5fr;
     gap: 25px;
-    grid-template-areas: "zapatillas remeras" "pantalones buzos"; } }
+    grid-template-areas: "zapatillas remeras" "pantalones buzos"; }
+  .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen img {
+    width: 45%;
+    height: 280px; }
+  .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side {
+    width: 50%; } }
 
 @media only screen and (max-width: 750px) {
   .navbar .superior {
@@ -517,7 +536,15 @@ body::-webkit-scrollbar-thumb {
         height: 50px; }
     .navbar .superior #btn-menu:checked ~ .barraDeNavegacion {
       margin-left: -11px;
-      text-align: center; } }
+      text-align: center; }
+  .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen {
+    flex-direction: column;
+    margin: auto; }
+    .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen img {
+      width: 80%;
+      height: 320px; }
+    .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side {
+      width: 95%; } }
 
 @media only screen and (max-width: 600px) {
   .distribucionTarjetas {
@@ -565,4 +592,12 @@ body::-webkit-scrollbar-thumb {
       width: 100%;
       height: 60px; }
   legend {
-    font-size: large; } }
+    font-size: large; }
+  .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen {
+    flex-direction: column;
+    margin: auto; }
+    .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen img {
+      width: 80%;
+      height: 280px; }
+    .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side {
+      width: 95%; } }
