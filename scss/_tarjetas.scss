@@ -10,9 +10,10 @@
                     background-color: $azul_medio;
                     display: flex;
                     flex-direction: row;
+                    border: 1px solid $azul_medio;
                     img {
                         @include width-heigth (70%, 400px);
-                        margin: auto;
+                        margin: 20px;
                     }
                     .side {
                         display: flex;

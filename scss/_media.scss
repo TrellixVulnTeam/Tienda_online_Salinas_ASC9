@@ -153,6 +153,7 @@
                         margin: auto;
                         img {
                             @include width-heigth (80%, 320px);
+                            margin-top: 45px;
                         }
                         .side {
                             width: 95%;
