@@ -153,10 +153,11 @@
                         margin: auto;
                         img {
                             @include width-heigth (80%, 320px);
-                            margin-top: 45px;
+                            margin: 45px auto 0;
                         }
                         .side {
                             width: 95%;
+                            text-align: center;
                         }
                     }
                 }
@@ -261,7 +262,7 @@
                         flex-direction: column;
                         margin: auto;
                         img {
-                            @include width-heigth (80%, 280px);
+                            @include width-heigth (80%, 200px);
                         }
                         .side {
                             width: 95%;
