@@ -672,4 +672,6 @@ body::-webkit-scrollbar-thumb {
     .card404 .foto404 {
       margin: 80px auto; }
       .card404 .foto404 img {
-        margin: 25% 20%; } }
+        margin: 25% 20%; }
+    .card404 .escrito404 .botonAlIndex {
+      padding: 10%; } }
