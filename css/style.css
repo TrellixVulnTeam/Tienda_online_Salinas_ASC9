@@ -453,6 +453,56 @@ body::-webkit-scrollbar-thumb {
     width: 75px;
     color: #DB4437; }
 
+.card404 {
+  width: 90%;
+  height: 50%;
+  margin: 70px auto;
+  padding: 2%;
+  background-color: #011335;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "foto404 escrito404"; }
+  .card404 .foto404 {
+    grid-area: foto404;
+    width: 95%;
+    margin: auto;
+    padding: 2%;
+    background-color: white; }
+    .card404 .foto404 img {
+      width: 60%;
+      margin: auto 20%; }
+  .card404 .escrito404 {
+    grid-area: escrito404;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    padding: 1%; }
+    .card404 .escrito404 .titulo {
+      margin: 3%;
+      text-align: center; }
+      .card404 .escrito404 .titulo h1 {
+        font-size: 3rem;
+        color: #ccc; }
+    .card404 .escrito404 .parrafo {
+      margin: 3%; }
+      .card404 .escrito404 .parrafo p {
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        color: #ccc; }
+    .card404 .escrito404 .botonAlIndex {
+      width: 150px;
+      height: 40px;
+      margin: 7% auto;
+      padding: 2%;
+      background-color: #ff0000; }
+      .card404 .escrito404 .botonAlIndex a {
+        text-align: center;
+        text-decoration: none;
+        color: #eee; }
+      .card404 .escrito404 .botonAlIndex:hover {
+        background-color: #800505; }
+
 @media only screen and (max-width: 1250px) {
   .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen img {
     width: 55%;
@@ -500,7 +550,20 @@ body::-webkit-scrollbar-thumb {
     width: 45%;
     height: 280px; }
   .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side {
-    width: 50%; } }
+    width: 50%; }
+  .card404 {
+    padding: 5%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto404" "escrito404"; }
+    .card404 .foto404 {
+      width: 80%; }
+    .card404 .escrito404 .parrafo p {
+      text-align: center; }
+    .card404 .escrito404 .botonAlIndex {
+      width: 160px;
+      height: 40px;
+      margin: 7% auto; } }
 
 @media only screen and (max-width: 750px) {
   .navbar .superior {
@@ -603,4 +666,10 @@ body::-webkit-scrollbar-thumb {
       width: 80%;
       height: 200px; }
     .tarjetasGrandesPresentacion .carouselExterno .carouselInterno .conteinerImgDescrip .imagen .side {
-      width: 95%; } }
+      width: 95%; }
+  .card404 {
+    padding: 0; }
+    .card404 .foto404 {
+      margin: 80px auto; }
+      .card404 .foto404 img {
+        margin: 25% 20%; } }

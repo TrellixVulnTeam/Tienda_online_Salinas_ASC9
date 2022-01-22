@@ -1,0 +1,55 @@
+.card404 {
+    @include width-heigth-margin (90%, 50%, 70px auto);
+    padding: 2%;
+    background-color: $azul_marino;
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "foto404 escrito404";
+    .foto404 {
+        grid-area: foto404;
+        width: 95%;
+        margin: auto;
+        padding: 2%;
+        background-color: white;
+        img {
+            width: 60%;
+            margin: auto 20%;
+        }
+    }
+    .escrito404 {
+        grid-area: escrito404;
+        @include width-heigth-margin (95%, 95%, auto);
+        padding: 1%;
+        .titulo {
+            margin: 3%;
+            text-align: center;
+            h1 {
+                font-size: 3rem;
+                color: $gris_medio;
+            }
+        }
+        .parrafo {
+            margin: 3%;
+            p {
+                font-size: 1.5rem;
+                letter-spacing: 1.5px;
+                color: $gris_medio;
+            }
+        }
+        .botonAlIndex {
+            @include width-heigth-margin (150px, 40px, 7% auto);
+            padding: 2%;
+            background-color: #ff0000;
+            a {
+                text-align: center;
+                text-decoration: none;
+                color: $gris_claro;
+            }
+            &:hover {
+                background-color: #800505;
+            }
+        }
+    }
+}
